@@ -7,4 +7,4 @@ COPY . .
 RUN yarn run build
 RUN yarn run transpile
 
-CMD PORT=$PORT yarn run start:staging
+CMD PORT=$PORT yarn run start:prod
