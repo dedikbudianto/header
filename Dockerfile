@@ -1,10 +1,10 @@
 FROM node
 
 COPY package.json .
-RUN npm install
+RUN yarn install
 COPY . .
 
-RUN npm run build
-RUN npm run transpile
+RUN yarn run build
+RUN yarn run transpile
 
-CMD PORT=$PORT npm run start:prod
+CMD PORT=$PORT yarn run start:staging
