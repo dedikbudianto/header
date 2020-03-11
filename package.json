@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "transpile": "babel src --out-dir transpiled --presets react-app",
-    "start:prod": "node server.js"
+    "transpile": "NODE_ENV=production babel src --out-dir transpiled --presets react-app",
+    "start:prod": "NODE_ENV=production node server.js"
   }
 }
